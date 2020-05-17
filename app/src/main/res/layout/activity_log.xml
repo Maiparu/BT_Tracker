@@ -12,23 +12,32 @@
         android:layout_height="wrap_content"
         android:text="Please log your temperature today"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="69dp"
-        tools:layout_editor_absoluteY="122dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.182" />
 
     <EditText
         android:id="@+id/LogInputData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="194dp" />
+        app:layout_constraintBottom_toTopOf="@+id/LogSaveBotton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/LogSaveBotton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="396dp"
         android:text="Save"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="285dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
